@@ -19,6 +19,6 @@ var counter=0;
      };
      // Make ther request
      request.open('GET','http://abdul1997latif.imad.hasura-app.io/counter',true);
-     requestsend(null);
+     request.send(null);
      
  };
