@@ -23,8 +23,7 @@ var counter=0;
      
  };
  //submit name
- var nameInput=document.getElementById('name');
- var name=nameInput.value;
+
  var submit=document.getElementById('submit_btn');
  submit.onclick = function () {
        //create a request object
@@ -53,6 +52,8 @@ var counter=0;
        //Not done yet  
      };
      // Make ther request
+      var nameInput=document.getElementById('name');
+      var name=nameInput.value;
      request.open('GET','http://abdul1997latif.imad.hasura-app.io/submit-name=' + name,true);
      request.send(null);
      
